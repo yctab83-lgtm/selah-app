@@ -133,6 +133,6 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-app.listen(port, () => {
+app.listen(Number(port), '0.0.0.0', () => {
   console.log(`Selah bediener hardloop op poort ${port}`);
 });
