@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F4F8FA; /* Coastal sea salt / soft ocean mist */
+    color: #0F2537; /* Deep oceanic ink */
+  }
+}
+
+.font-serif-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-ui {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Ocean Glass and Water Textures */
+.ocean-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(14, 116, 144, 0.15);
+}
+
+.ocean-gradient-banner {
+  background: linear-gradient(135deg, #071E2E 0%, #0C344E 50%, #155E75 100%);
+}
+
+.ocean-teal-gradient {
+  background: linear-gradient(135deg, #0F766E 0%, #0E7490 100%);
+}
+
+/* Subtle print styles for Year in Review export */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

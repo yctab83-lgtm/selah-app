@@ -1,0 +1,7 @@
+{
+  "name": "Selah - Bible Study, SOAP & Prayer Journal",
+  "description": "A tranquil, comprehensive Bible study companion featuring daily reading plans, editable SOAP devotionals, reflection & gratitude journaling, answered prayer tracking, and Year in Review retrospectives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
